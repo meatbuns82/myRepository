@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url:  jdbc:mysql://localhost:3306/myproject?characterEncoding=utf-8&useSSL=false
+  redis:
+    timeout: 0
+    host: 192.168.137.73
+    port: 6379
+    pool:
+      max-idle: 8
+      max-active: 8
+      max-wait: 3000
+    password:
+mybatis:
+  mapper-locations: classpath*:com/luwenhua/springboot/**/mapperXML/*Mapper.xml
+
